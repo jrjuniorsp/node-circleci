@@ -11,10 +11,10 @@
     "storage": "./db.development.sqlite"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "gnuvoknzvcyppr",
+    "password": "78uxgX8llLgQ52c-02i3y2qj1K",
+    "database": "d8kqcl9141hru5",
+    "host": "ec2-54-227-247-161.compute-1.amazonaws.com",
+    "dialect": "postgres"
   }
 }
