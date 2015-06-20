@@ -5,18 +5,22 @@ var models 	= require('../models');
 var Users  	= models.Users;
 
 describe('Users', function() {
+
+	beforeEach(function(done) {
+		models.sequelize.sync({force : true})
+		.then(function() {
+			done();
+		})
+	});
+
 	describe('#create', function() {
 		it('Expects the User is saved', function(done) {
-			/*
+			
 			Users.create({name : 'Batman'})
 			.then(function(user) {
-				console.log(user.id);
-				assert(user.id != null);
+				assert.equal(1, user.id);
 				done();
 			});
-			*/
-			assert.equal(1,1);
-			done();
 		});
 	});
 });
