@@ -4,4 +4,4 @@ deployment:
     heroku:
       appname: jr-node-circleci
     commands:
-    	- heroku run sequelize db:migrate --env production -m --app jr-node-circleci
+      - heroku run sequelize db:migrate --env production -m --app jr-node-circleci
