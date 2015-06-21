@@ -4,4 +4,5 @@ deployment:
     heroku:
       appname: jr-node-circleci
     commands:
+      - git push git@heroku.com:jr-node-circleci.git $CIRCLE_SHA1:refs/heads/master
       - heroku run sequelize db:migrate --env production -m --app jr-node-circleci
